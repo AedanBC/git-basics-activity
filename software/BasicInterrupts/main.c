@@ -17,7 +17,7 @@ int main(void)
     NIOS2_WRITE_IENABLE(0x1);
 
     IOWR(KEY_BASE, 3, 0); // clear interrupt capture register
-    IOWR(KEY_BASE, 2, 0x3); // enable bits 0 and 1
+    IOWR(KEY_BASE, 2, 0x3030); // enable bits 0 and 1
 
     while (1)
     {
